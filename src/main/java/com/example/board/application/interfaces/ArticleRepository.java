@@ -1,14 +1,15 @@
 package com.example.board.application.interfaces;
 
 import com.example.board.entity.Article;
-import com.example.board.entity.ArticleComment;
-import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
 public interface ArticleRepository {
     List<Article> findByUserId(String userId);
 
+    Article save(Article article);
 
-    void deleteByCommentId(Long commentId);
+    Article findById(Long id);
+
+    void deleteById(Long articleId);
 }
