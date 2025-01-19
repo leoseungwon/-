@@ -1,4 +1,4 @@
-package com.example.board.domain;
+package com.example.board.entity;
 
 
 import jakarta.persistence.*;
